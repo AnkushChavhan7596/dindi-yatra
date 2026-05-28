@@ -1,0 +1,37 @@
+<div class="sidebar">
+    <div class="logo" (click)="logoClick()">
+        <img [src]="`https://cdn-icons-png.flaticon.com/128/16770/16770541.png`" alt="logo">
+        <span>DindiYatra</span>
+    </div>
+
+    <div class="menu">
+        <div class="top">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/1946/1946488.png`" alt="">
+                <span>Dashboard</span>
+            </a>
+            <a routerLink="/institutions" routerLinkActive="active" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/3051/3051188.png`" alt="">
+                <span>Institutions</span>
+            </a>
+            <a routerLink="/tours" routerLinkActive="active" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/17386/17386834.png`" alt="">
+                <span>Tours</span>
+            </a>
+            <a routerLink="/payments" routerLinkActive="active" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/482/482541.png`" alt="">
+                <span>Payments</span>
+            </a>
+            <a routerLink="/profile/123" routerLinkActive="active" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/1077/1077063.png`" alt="">
+                <span>Profile</span>
+            </a>
+        </div>
+        <div class="bottom">
+            <a routerLink="/" routerLinkActive="active" class="item">
+                <img [src]="`https://cdn-icons-png.flaticon.com/128/1828/1828427.png`" alt="">
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+</div>

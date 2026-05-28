@@ -1,0 +1,13 @@
+<div class="title-container" [ngStyle]="containerStyles()">
+    <div class="title" [ngStyle]="titleStyles()">
+        <p>{{ title() }}</p>
+    </div>
+
+    @if(navTo()){
+
+    <div class="nav-btn">
+        <p (click)="handleNavToClick()">{{ navTo() }}</p>
+    </div>
+
+    }
+</div>

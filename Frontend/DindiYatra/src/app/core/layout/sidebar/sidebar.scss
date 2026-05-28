@@ -1,0 +1,139 @@
+.sidebar{
+    width: 220px;
+    height: 97vh;
+    padding: 10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.331);
+    position: sticky;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 6px;
+
+        img{
+            width: 35px;
+            height: 35px;
+        }
+
+        span{
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 10px;
+            // color: var(--primary-color);
+            color: #4f8de4;
+        }
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 70px);
+        
+        .top, .bottom{
+            margin-top: 30px;
+
+            a{
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+                color: var(--text-color);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+
+                 &.active {
+                // color: var(--primary-color);
+                    font-weight: 600;
+                    background-color: #4f8de423;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 700px) {
+
+    .sidebar{
+        width: 60px;
+
+        .logo{
+            margin-left: 14px;
+
+            img{
+                width: 30px;
+                height: 30px;
+            }
+
+            span{
+                display: none;
+            }
+        }
+
+        .menu{
+            .top, .bottom{
+                a{
+                    justify-content: center;
+
+                    span{
+                        display: none;
+                    }
+
+                     img{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .sidebar{
+        width: 45px;
+
+        .logo{
+            margin-left: 9px;
+
+            img{
+                width: 26px;
+                height: 26px;
+            }
+
+            span{
+                display: none;
+            }
+        }
+
+        .menu{
+            .top, .bottom{
+                a{
+                    justify-content: center;
+
+                    span{
+                        display: none;
+                    }
+
+                     img{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

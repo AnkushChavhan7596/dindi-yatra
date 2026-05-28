@@ -1,0 +1,43 @@
+@use '../../../shared/styles/_variables.scss';
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        img{
+            width: 35px;
+            height: 35px;
+        }
+
+        span{
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin: 0 10px;
+            // color: var(--primary-color);
+            color: #4f8de4;
+        }
+    }
+
+    .menu {
+        a {
+            padding: 0 15px;
+            text-decoration: none;
+            color: var(--text-color);
+
+            &.active {
+                // color: var(--primary-color);
+                color: #4f8de4;
+                font-weight: 600;
+            }
+        }
+    }
+}

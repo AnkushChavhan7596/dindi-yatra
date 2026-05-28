@@ -1,0 +1,16 @@
+.title-container{
+    display: flex;
+    justify-content: space-between;
+
+    .title{
+        p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .nav-btn{
+        color: rgb(86, 86, 244);
+        cursor: pointer;
+    }
+}

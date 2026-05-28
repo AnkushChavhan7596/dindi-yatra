@@ -1,0 +1,4 @@
+<button [ngClass]="{
+        fill: isPrimary(),
+        transparent: !isPrimary(),
+    }" [ngStyle]="dynamicStyles()" (click)="onClick()">{{ title() }}</button>

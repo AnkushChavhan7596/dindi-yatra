@@ -1,0 +1,24 @@
+button{
+    // background-color: var(--primary-color);
+    // color: var(--light-text);
+    padding: 6px 30px;
+    border-radius: 5px;
+    letter-spacing: .5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.783);
+
+    &.fill{
+        background-color:  #4f8de4;
+        border: 2px solid #4f8de4;
+        color: white;
+    }
+
+    &.transparent{
+        background-color:  transparent;
+        border: 2px solid #4f8de4;
+        color: #4f8de4;
+    }
+}
+
