@@ -1,5 +1,5 @@
 .institution-card{
-    width: 270px;
+    width: 275px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
@@ -27,6 +27,113 @@
                 color: rgb(56, 56, 56);
             }
         }
+
+        .members{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+
+            span{
+                font-size: 12px;
+                color: rgb(59, 59, 59);
+            }
+
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
       
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .institution-card{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .institution-card{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .institution-card{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .institution-card{
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .institution-card{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .institution-card{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .institution-card{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .institution-card{
+        width: 207px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .institution-card{
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .institution-card{
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .institution-card{
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .institution-card{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .institution-card{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .institution-card{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .institution-card{
+        width: 210px;
     }
 }

@@ -39,6 +39,9 @@ export class Button {
   fs = input<string>(); // font-size
   fw = input<string>(); // font-weight
 
+  // Button width
+  bw = input<string>();
+
   dynamicStyles = computed(() => {
 
     const styles: any = {};
@@ -78,6 +81,9 @@ export class Button {
     // Font
     if (this.fs()) styles['font-size'] = this.fs();
     if (this.fw()) styles['font-weight'] = this.fw();
+
+    // Button width
+    if(this.bw()) styles['width'] = this.bw();
 
     return styles;
   });

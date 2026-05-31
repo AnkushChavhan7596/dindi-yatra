@@ -1,13 +1,19 @@
 <div class="title-container" [ngStyle]="containerStyles()">
-    <div class="title" [ngStyle]="titleStyles()">
-        <p>{{ title() }}</p>
+    <div class="title">
+        <p [ngStyle]="titleStyles()">{{ title() }}</p>
     </div>
 
     @if(navTo()){
-
     <div class="nav-btn">
         <p (click)="handleNavToClick()">{{ navTo() }}</p>
     </div>
+    }
 
+    @if(nestedNav().length > 0){
+    <div class="nested-nav">
+        @for(item of nestedNav(); track item; let isLast = $last){
+        <span (click)="handleNav(item)">{{ item?.link }} @if(!isLast){ / } </span>
+        }
+    </div>
     }
 </div>

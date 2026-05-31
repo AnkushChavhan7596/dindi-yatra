@@ -2,7 +2,27 @@
     <app-sidebar />
 
     <div class="main-container">
-        <p>institutions</p>
+        <app-title [title]="'Institutions'" [fs]="'25px'" [nestedNav]="nestedNav" />
+
+        <app-search [placeholder]="'Search institutions ...'" (search)="searchInstitutions($event)" />
+
+        <div class="institution-cards">
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+            <app-institution-card [isInfo]="true" />
+        </div>
     </div>
 
 </div>

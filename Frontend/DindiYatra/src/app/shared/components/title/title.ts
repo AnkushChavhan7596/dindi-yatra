@@ -1,5 +1,6 @@
-import { Component, computed, input, output } from '@angular/core';
+import { Component, computed, inject, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-title',
@@ -12,9 +13,16 @@ export class Title {
   title = input<string>("");
   navTo = input<string>("");
   navToClick = output<void>();
+  nestedNav = input<NestedNav[]>([]);
+
+  router = inject(Router);
 
   handleNavToClick(){
     this.navToClick.emit();
+  }
+
+  handleNav(item: NestedNav){
+    this.router.navigate([item?.navTo]);
   }
 
   // Container padding

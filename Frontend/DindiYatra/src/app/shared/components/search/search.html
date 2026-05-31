@@ -1,0 +1,10 @@
+<div class="search-container" [ngStyle]="containerStyles()">
+    <input type="text" [placeholder]="placeholder()" [ngModel]="searchText" (ngModelChange)="onInput($event)"
+        (keyup.enter)="onSearch()" />
+
+    @if(searchText){
+    <span class="clear-btn" (click)="clearSearch()">
+        ✕
+    </span>
+    }
+</div>
