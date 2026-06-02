@@ -1,0 +1,9 @@
+.tours {
+  display: flex;
+}
+.tours .main-container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 15px;
+}/*# sourceMappingURL=tours.css.map */

@@ -110,30 +110,6 @@
 
 @media screen and (max-width: 575px) {
     .institution-card{
-        width: 210px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .institution-card{
-        width: 350px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .institution-card{
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .institution-card{
-        width: 250px;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .institution-card{
-        width: 210px;
+        min-width: calc(100vw - 90px);
     }
 }

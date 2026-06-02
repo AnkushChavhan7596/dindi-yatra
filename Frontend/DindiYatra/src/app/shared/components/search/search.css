@@ -1,6 +1,8 @@
 .search-container {
   position: relative;
   width: 100%;
+  flex: 1;
+  min-width: 0;
 }
 .search-container input {
   width: 100%;
@@ -28,25 +30,4 @@
 }
 .search-container .clear-btn:hover {
   color: #111827;
-}
-
-@media screen and (max-width: 900px) {
-  .search-container {
-    width: 97%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .search-container {
-    width: 96%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .search-container {
-    width: 95%;
-  }
-}
-@media screen and (max-width: 400px) {
-  .search-container {
-    width: 94%;
-  }
 }/*# sourceMappingURL=search.css.map */

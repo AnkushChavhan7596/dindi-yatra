@@ -1,0 +1,35 @@
+.upcoming-tour {
+  display: flex;
+  gap: 10px;
+  width: 290px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+  border-left: 1px solid rgba(128, 128, 128, 0.333);
+  cursor: pointer;
+  padding: 7px;
+}
+.upcoming-tour img {
+  width: 100px;
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.upcoming-tour .info {
+  padding: 10px;
+}
+.upcoming-tour .info h2 {
+  font-size: 16px;
+  margin: 0;
+}
+.upcoming-tour .info .date {
+  margin: 10px 0;
+}
+.upcoming-tour .info .date span {
+  font-size: 13px;
+  color: rgb(56, 56, 56);
+}
+.upcoming-tour .info .fee span {
+  font-weight: 500;
+}/*# sourceMappingURL=inst-tour-card.css.map */

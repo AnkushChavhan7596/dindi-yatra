@@ -1,6 +1,7 @@
 import { Component, computed, inject, input, output } from '@angular/core';
 import { NgStyle } from '@angular/common';
 import { Router } from '@angular/router';
+import { NestedNav } from '../../../features/institutions/models/NestedNav';
 
 @Component({
   selector: 'app-title',

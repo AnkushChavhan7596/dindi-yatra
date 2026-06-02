@@ -1,4 +1,4 @@
-interface NestedNav {
+export interface NestedNav {
     link: string,
     navTo: string
 }

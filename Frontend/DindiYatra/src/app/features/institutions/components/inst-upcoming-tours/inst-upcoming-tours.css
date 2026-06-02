@@ -1,0 +1,14 @@
+.inst-upcoming-tours {
+  width: calc(100% - 270px);
+}
+.inst-upcoming-tours .tours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .inst-upcoming-tours {
+    width: 100%;
+  }
+}/*# sourceMappingURL=inst-upcoming-tours.css.map */

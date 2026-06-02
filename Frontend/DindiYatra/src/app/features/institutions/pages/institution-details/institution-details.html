@@ -2,6 +2,39 @@
     <app-sidebar />
 
     <div class="main-container">
-        <p>Institution details</p>
+        <app-title [title]="pageTitle()" [fs]="'25px'" [nestedNav]="nestedNav" />
+
+        <div class="head">
+            <img [src]="'assets/images/institution-card-img.jpeg'" alt="institution-cover" class="cover">
+
+            <div class="info">
+                <div class="logo">
+                    <img [src]="'assets/images/upcoming-tour.jpg'" alt="institution-logo">
+                </div>
+
+                <div class="details">
+                    <div class="left">
+                        <h2>Kedarnath Yatra</h2>
+                        <div class="location">
+                            <span>Nagpur, Maharashtra</span>
+                        </div>
+
+                        <div class="members">
+                            <img [src]="'assets/icons/members.png'" alt="members">
+                            <span>1200+ Members</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <app-button [title]="'Join Institution'" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <app-institution-info />
+
+            <app-inst-upcoming-tours />
+        </div>
     </div>
 </div>

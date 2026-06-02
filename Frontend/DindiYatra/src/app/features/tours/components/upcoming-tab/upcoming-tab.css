@@ -1,0 +1,10 @@
+.upcoming-tab {
+  padding: 20px 0;
+}
+.upcoming-tab .header {
+  display: flex;
+  gap: 15px;
+}
+.upcoming-tab .header .search {
+  width: 85%;
+}/*# sourceMappingURL=upcoming-tab.css.map */

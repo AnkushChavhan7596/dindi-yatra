@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .title-container .title p {
   font-size: 20px;
@@ -15,7 +17,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .title-container .title p {
     font-size: 20px !important;
   }

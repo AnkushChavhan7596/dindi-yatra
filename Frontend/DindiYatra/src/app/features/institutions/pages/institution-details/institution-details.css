@@ -1,0 +1,111 @@
+.institution-details {
+  height: 100vh;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
+.institution-details .main-container {
+  height: 95vh;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.institution-details .main-container .head {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.425);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.institution-details .main-container .head .cover {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.institution-details .main-container .head .info {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+}
+.institution-details .main-container .head .info .logo {
+  width: 140px;
+  position: relative;
+}
+.institution-details .main-container .head .info .logo img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  top: -60%;
+  left: 0;
+  z-index: 1;
+  border: 7px solid white;
+}
+.institution-details .main-container .head .info .details {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.institution-details .main-container .head .info .details .left h2 {
+  font-size: 22px;
+  margin: 0;
+}
+.institution-details .main-container .head .info .details .left .location {
+  margin: 10px 0;
+}
+.institution-details .main-container .head .info .details .left .location span {
+  font-size: 13px;
+  color: rgb(56, 56, 56);
+}
+.institution-details .main-container .head .info .details .left .members {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.institution-details .main-container .head .info .details .left .members span {
+  font-size: 12px;
+  color: rgb(59, 59, 59);
+}
+.institution-details .main-container .head .info .details .left .members img {
+  width: 25px;
+  height: 25px;
+}
+.institution-details .main-container .head .info .details .right {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .institution-details {
+    gap: 0px;
+  }
+  .institution-details .main-container {
+    padding: 10px;
+  }
+  .institution-details .main-container .head .cover {
+    height: 220px;
+  }
+  .institution-details .main-container .head .info {
+    padding: 12px;
+  }
+  .institution-details .main-container .head .info .logo {
+    width: 130px;
+    position: relative;
+  }
+  .institution-details .main-container .head .info .logo img {
+    width: 110px;
+    height: 110px;
+  }
+  .institution-details .main-container .head .info .details .left h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .institution-details .main-container .head .info .details .left .members img {
+    width: 22px;
+    height: 22px;
+  }
+}/*# sourceMappingURL=institution-details.css.map */

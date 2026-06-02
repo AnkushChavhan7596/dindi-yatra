@@ -1,0 +1,36 @@
+.institution-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+.institution-info .about-us .title {
+  font-size: 22px;
+  margin: 0;
+}
+.institution-info .about-us .desc {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+}
+.institution-info .contact-info {
+  border: 1px solid rgba(128, 128, 128, 0.313);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+.institution-info .contact-info .title {
+  font-size: 18px;
+}
+.institution-info .contact-info .info .item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.institution-info .contact-info .info .item img {
+  width: 18px;
+}
+.institution-info .contact-info .info .item span {
+  font-size: 14px;
+  color: rgb(78, 78, 78);
+}/*# sourceMappingURL=institution-info.css.map */

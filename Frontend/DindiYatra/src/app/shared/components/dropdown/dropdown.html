@@ -1,0 +1,13 @@
+<div class="dropdown-container" [ngStyle]="containerStyles()">
+    <select [ngModel]="selected()" (ngModelChange)="onChange($event)">
+        <!-- <option value="" disabled selected>
+            {{ placeholder() }}
+        </option> -->
+
+        @for (item of options(); track item.value) {
+        <option [value]="item.value">
+            {{ item.label }}
+        </option>
+        }
+    </select>
+</div>

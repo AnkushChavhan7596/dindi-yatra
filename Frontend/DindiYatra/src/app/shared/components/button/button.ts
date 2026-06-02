@@ -42,6 +42,9 @@ export class Button {
   // Button width
   bw = input<string>();
 
+  // Box Shadow
+  bs = input<string>();
+
   dynamicStyles = computed(() => {
 
     const styles: any = {};
@@ -84,6 +87,9 @@ export class Button {
 
     // Button width
     if(this.bw()) styles['width'] = this.bw();
+
+    // Box shadow
+    if(this.bs()) styles['box-shadow'] = this.bs();
 
     return styles;
   });

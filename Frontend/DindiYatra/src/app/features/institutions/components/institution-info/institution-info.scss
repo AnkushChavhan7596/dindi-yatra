@@ -1,0 +1,47 @@
+.institution-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    padding-bottom: 0;
+
+    .about-us{
+        .title{
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .desc{
+            font-size: 14px;
+            color: rgb(78, 78, 78);
+        }
+    }
+
+    .contact-info{
+        border: 1px solid rgba(128, 128, 128, 0.313);
+        border-radius: 10px;
+        padding: 10px 14px;
+
+        .title{
+            font-size: 18px;
+        }
+
+        .info{
+            .item{
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    width: 18px;
+                }
+
+                span{
+                    font-size: 14px;
+                    color: rgb(78, 78, 78);
+                }
+            }
+        }
+    }
+}

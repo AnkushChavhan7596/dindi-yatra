@@ -2,7 +2,17 @@
     <app-sidebar />
 
     <div class="main-container">
-        <p>tours</p>
+        <app-title [title]="'Tours'" [fs]="'25px'" [nestedNav]="nestedNav" />
+
+        <app-tabs [tabs]="tabs" (tabChanged)="onTabChanged($event)" />
+
+        @if (selectedTab() == upcoming) {
+            <app-upcoming-tab />
+        }
+
+        @if (selectedTab() == completed) {
+            <app-completed-tab />
+        }
     </div>
 
 </div>
