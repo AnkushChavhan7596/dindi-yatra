@@ -2,7 +2,44 @@
     <app-sidebar />
 
     <div class="main-container">
-        <p>profile</p>
+        <app-title [title]="'Profile'" [fs]="'25px'" [nestedNav]="nestedNav" />
+
+        <div class="details">
+            <div class="profile-details">
+                <img [src]="'assets/images/upcoming-tour.jpg'" class="profile-img" alt="profile">
+                <h2 class="name">
+                    Ankush Chavhan
+                </h2>
+                <span class="email">ankush@gmail.com</span>
+                <span class="mobile">+91 1234567891</span>
+
+                <app-button [bs]="'none'" [mt]="'10px'" [title]="'Edit Profile'" />
+            </div>
+
+            <div class="account-details">
+                <h2 class="heading">Account Details</h2>
+
+                <div class="item">
+                    <div class="key">Name</div>
+                    <div class="value">Ankush Chavhan</div>
+                </div>
+
+                <div class="item">
+                    <div class="key">Email</div>
+                    <div class="value">ankush@gmail.com</div>
+                </div>
+
+                <div class="item">
+                    <div class="key">Mobile</div>
+                    <div class="value">+91 1234567891</div>
+                </div>
+
+                <div class="item">
+                    <div class="key">Member Since</div>
+                    <div class="value">10 Apr 2026</div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

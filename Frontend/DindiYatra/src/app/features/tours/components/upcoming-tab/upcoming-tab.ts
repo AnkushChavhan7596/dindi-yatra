@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Search } from "../../../../shared/components/search/search";
 import { Dropdown } from '../../../../shared/components/dropdown/dropdown';
+import { Tour } from '../tour/tour';
 
 @Component({
   selector: 'app-upcoming-tab',
-  imports: [Search, Dropdown],
+  imports: [Search, Dropdown, Tour],
   templateUrl: './upcoming-tab.html',
   styleUrl: './upcoming-tab.scss',
 })

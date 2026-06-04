@@ -1,5 +1,7 @@
 .tours {
+  height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 .tours .main-container {
   height: 100vh;

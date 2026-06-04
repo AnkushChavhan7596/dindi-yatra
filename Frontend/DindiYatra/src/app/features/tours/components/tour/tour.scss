@@ -1,0 +1,73 @@
+.tour{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.285);
+    gap: 10px;
+
+    .group{
+        display: flex;
+        align-items: center;
+        gap:30px;
+
+        .tour-img{
+            img{
+                width: 160px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        };
+
+        .info{
+            .tour-name{
+                font-size: 18px;
+                font-weight: 500;
+                margin: 5px 0;
+            }
+
+            .institution-name{
+                color: rgb(122, 122, 122);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .tour{
+        .group{
+            gap:10px;
+            display: flex;
+
+            .tour-img{
+                img{
+                    width: 150px;
+                    height: 80px;
+                }
+            };
+
+            .info{
+                .tour-name{
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        .date{
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .tour{
+        .group{
+            flex-direction: column-reverse;
+        }
+    }
+}

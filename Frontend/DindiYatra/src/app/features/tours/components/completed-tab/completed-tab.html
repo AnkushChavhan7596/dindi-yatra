@@ -1,1 +1,17 @@
-<p>completed-tab works!</p>
+<div class="completed-tab">
+    <div class="header">
+        <div class="search">
+            <app-search [placeholder]="'Search tours...'" (search)="handleTourSearch($event)" />
+        </div>
+
+        <app-dropdown [options]="institutions" (valueChange)="onInstitutionChange($event)" />
+    </div>
+
+    <div class="tours">
+        <app-tour [isCompleted]="true" />
+        <app-tour [isCompleted]="true" />
+        <app-tour [isCompleted]="true" />
+        <app-tour [isCompleted]="true" />
+        <app-tour [isCompleted]="true" />
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.completed-tab {
+  padding: 20px 0;
+}
+.completed-tab .header {
+  display: flex;
+  gap: 15px;
+}
+.completed-tab .header .search {
+  width: 85%;
+}/*# sourceMappingURL=completed-tab.css.map */
